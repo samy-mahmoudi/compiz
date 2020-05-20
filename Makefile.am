@@ -12,19 +12,9 @@ EXTRA_DIST =		   \
 	compiz.pc.in	    \
 	compiz-cube.pc.in   \
 	compiz-scale.pc.in  \
-	intltool-extract.in \
-	intltool-merge.in   \
-	intltool-update.in  \
 	gettext
 
 DISTCHECK_CONFIGURE_FLAGS = --with-gtk=$(GTK_API_VERSION)
-
-DISTCLEANFILES =		\
-	po/stamp-it		 \
-	intltool-extract	 \
-	intltool-merge		 \
-	intltool-update		 \
-	po/.intltool-merge-cache
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
